@@ -1,0 +1,241 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:2:1-15:12
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/4c104d0db947a3b5140b0ed5bacf7865/AndroidManifest.xml:2:1-14:12
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/3701c1ad81901406c1ec42b480eb107b/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9b29dd8c4e89eefe9a2e6bf3573f40af/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3466331579b9d35c81de36af898d729b/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/f27f2c0fd5cda0b84bf72111517413da/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/6ed3119a7d7e6a9c885f0d38f7fd6042/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/628b55950ac6fe0b1b22a539a29506e4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/2be803658eb9b2d26d770c5eef2df6a2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b70bb3f80270ddb01485139aa8af7309/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b67be9cee16214ba9dec19535a7f5faa/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0b2f7261081a56c8cdf198a7fc5a46a4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/40c0db89eccaabe6228b857652b93d57/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/ee83865afdc46c3ec67251693ba0d233/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/8550d7ea367c7a0130a19c0b5b3c6026/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1a86932b72b887c016f842565a399fa5/AndroidManifest.xml:17:1-26:12
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/2d40e484dd2e9f4d1e98163444eb7297/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/186d2e7ed2f11e6518187862984fad20/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/636fcfea3d28d87a378ef0a4d5017156/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ce3490194b2972ca40032661ce9e1521/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1db7f1ec992b1fe5a7a43705bde7f40a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a26da86bfe2c8162d51be04aa69c8e25/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/2399572f35c1cb794e39457247bb96db/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/d8a84c5538b399784033899da528d253/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:2:5-28
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:5:22-75
+application
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:13:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/4c104d0db947a3b5140b0ed5bacf7865/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/4c104d0db947a3b5140b0ed5bacf7865/AndroidManifest.xml:12:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/3701c1ad81901406c1ec42b480eb107b/AndroidManifest.xml:11:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/3701c1ad81901406c1ec42b480eb107b/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9b29dd8c4e89eefe9a2e6bf3573f40af/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9b29dd8c4e89eefe9a2e6bf3573f40af/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3466331579b9d35c81de36af898d729b/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3466331579b9d35c81de36af898d729b/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/f27f2c0fd5cda0b84bf72111517413da/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/f27f2c0fd5cda0b84bf72111517413da/AndroidManifest.xml:29:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b70bb3f80270ddb01485139aa8af7309/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b70bb3f80270ddb01485139aa8af7309/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b67be9cee16214ba9dec19535a7f5faa/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b67be9cee16214ba9dec19535a7f5faa/AndroidManifest.xml:2:3-17
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/2d40e484dd2e9f4d1e98163444eb7297/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/2d40e484dd2e9f4d1e98163444eb7297/AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/186d2e7ed2f11e6518187862984fad20/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/186d2e7ed2f11e6518187862984fad20/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/636fcfea3d28d87a378ef0a4d5017156/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/636fcfea3d28d87a378ef0a4d5017156/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ce3490194b2972ca40032661ce9e1521/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ce3490194b2972ca40032661ce9e1521/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1db7f1ec992b1fe5a7a43705bde7f40a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1db7f1ec992b1fe5a7a43705bde7f40a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a26da86bfe2c8162d51be04aa69c8e25/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a26da86bfe2c8162d51be04aa69c8e25/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/2399572f35c1cb794e39457247bb96db/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/2399572f35c1cb794e39457247bb96db/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/d8a84c5538b399784033899da528d253/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/d8a84c5538b399784033899da528d253/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:9:7-39
+	android:icon
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:8:7-38
+activity#com.sellitapp.MainActivity
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:23:7-84
+MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+	android:exported
+		ADDED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-37
+	android:name
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/4c104d0db947a3b5140b0ed5bacf7865/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/4c104d0db947a3b5140b0ed5bacf7865/AndroidManifest.xml:8:5-10:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/3701c1ad81901406c1ec42b480eb107b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/3701c1ad81901406c1ec42b480eb107b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9b29dd8c4e89eefe9a2e6bf3573f40af/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9b29dd8c4e89eefe9a2e6bf3573f40af/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3466331579b9d35c81de36af898d729b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3466331579b9d35c81de36af898d729b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/f27f2c0fd5cda0b84bf72111517413da/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/f27f2c0fd5cda0b84bf72111517413da/AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/6ed3119a7d7e6a9c885f0d38f7fd6042/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/6ed3119a7d7e6a9c885f0d38f7fd6042/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/628b55950ac6fe0b1b22a539a29506e4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/628b55950ac6fe0b1b22a539a29506e4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/2be803658eb9b2d26d770c5eef2df6a2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/2be803658eb9b2d26d770c5eef2df6a2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b70bb3f80270ddb01485139aa8af7309/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b70bb3f80270ddb01485139aa8af7309/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0b2f7261081a56c8cdf198a7fc5a46a4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0b2f7261081a56c8cdf198a7fc5a46a4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/40c0db89eccaabe6228b857652b93d57/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/40c0db89eccaabe6228b857652b93d57/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/ee83865afdc46c3ec67251693ba0d233/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/ee83865afdc46c3ec67251693ba0d233/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/8550d7ea367c7a0130a19c0b5b3c6026/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/8550d7ea367c7a0130a19c0b5b3c6026/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1a86932b72b887c016f842565a399fa5/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1a86932b72b887c016f842565a399fa5/AndroidManifest.xml:20:5-43
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/2d40e484dd2e9f4d1e98163444eb7297/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/2d40e484dd2e9f4d1e98163444eb7297/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/186d2e7ed2f11e6518187862984fad20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/186d2e7ed2f11e6518187862984fad20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/636fcfea3d28d87a378ef0a4d5017156/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/636fcfea3d28d87a378ef0a4d5017156/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ce3490194b2972ca40032661ce9e1521/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ce3490194b2972ca40032661ce9e1521/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1db7f1ec992b1fe5a7a43705bde7f40a/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1db7f1ec992b1fe5a7a43705bde7f40a/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a26da86bfe2c8162d51be04aa69c8e25/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a26da86bfe2c8162d51be04aa69c8e25/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/2399572f35c1cb794e39457247bb96db/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/2399572f35c1cb794e39457247bb96db/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/d8a84c5538b399784033899da528d253/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/d8a84c5538b399784033899da528d253/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
+activity#com.reactnativenavigation.controllers.NavigationActivity
+ADDED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-14:86
+	android:configChanges
+		ADDED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-83
+	android:name
+		ADDED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-84
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9b29dd8c4e89eefe9a2e6bf3573f40af/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9b29dd8c4e89eefe9a2e6bf3573f40af/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3466331579b9d35c81de36af898d729b/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3466331579b9d35c81de36af898d729b/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/f27f2c0fd5cda0b84bf72111517413da/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/f27f2c0fd5cda0b84bf72111517413da/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1a86932b72b887c016f842565a399fa5/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1a86932b72b887c016f842565a399fa5/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/186d2e7ed2f11e6518187862984fad20/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/186d2e7ed2f11e6518187862984fad20/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/636fcfea3d28d87a378ef0a4d5017156/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/636fcfea3d28d87a378ef0a4d5017156/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ce3490194b2972ca40032661ce9e1521/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ce3490194b2972ca40032661ce9e1521/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1db7f1ec992b1fe5a7a43705bde7f40a/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/1db7f1ec992b1fe5a7a43705bde7f40a/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a26da86bfe2c8162d51be04aa69c8e25/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/a26da86bfe2c8162d51be04aa69c8e25/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/2399572f35c1cb794e39457247bb96db/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/2399572f35c1cb794e39457247bb96db/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/d8a84c5538b399784033899da528d253/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/d8a84c5538b399784033899da528d253/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/8ab016e118be0435024c0d7f7cf1def9/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
