@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, Animated, Image } from "react-native";
 import BackImage from '../../../assets/images/loginPanel.jpg'
-
+import LoginForm from './loginForm';
 
 class LoginPanel extends Component {
 
@@ -37,7 +37,11 @@ class LoginPanel extends Component {
                     }}
                 >
                     <Image
-                        style={styles.imageStyle}
+                        style={
+                            this.props.orientation === "portrait"
+                            ? styles.imageStylePortrait
+                            : styles.imageStyleLandscape
+                        }
                         source={BackImage}
                         resizeMode={'contain'}
                     />
@@ -51,7 +55,7 @@ class LoginPanel extends Component {
                         })
                     }}
                 >
-                    <Text>FORM</Text>
+                    <LoginForm/>
                 </Animated.View>
             </View>
         )
@@ -59,10 +63,14 @@ class LoginPanel extends Component {
 }
 
 const styles = StyleSheet.create({
-    imageStyle: {
-        width: 270,
-        height: 150
-    }
+    imageStylePortrait: {
+    width: 270,
+    height: 150
+  },
+    imageStyleLandscape: {
+    width: 270,
+    height: 0
+  }
 });
 
 export default LoginPanel;
