@@ -1,26 +1,63 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 
-import LoadTabs from '../Tabs'
+import { getOrientation, setOrientationListener, removeOrientationListener} from "../../utils/misc";
+
+import LoadTabs from '../Tabs';
+import Logo from './logo';
+import LoginPanel from "./loginPanel";
 
 class Login extends React.Component {
-    render() {
-        return (
-            <View>
-                <Text>Login</Text>
-                <Button
-                    title="go to home"
-                    onPress={()=>{
-                        LoadTabs();
-                    }}
-                />
-            </View>
-        );
-    }
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      orientation: getOrientation(500),
+      logoAnimation:false
+    };
+
+    setOrientationListener(this.changeOrientation);
+  }
+
+  changeOrientation = () => {
+    this.setState({
+      orientation: getOrientation(500)
+    });
+  };
+  
+  showLogin = () => {
+      this.setState({
+          logoAnimation:true
+      })
+  }
+
+  componentWillUnmount() {
+    removeOrientationListener();
+  }
+
+  render() {
+    return (
+      <ScrollView>
+        <View style={styles.container}>
+          <Logo
+            showLogin={this.showLogin}
+            orientation={this.state.orientation}
+          />
+          <LoginPanel 
+            show={this.state.logoAnimation}
+            orientation={this.state.orientation} />
+        </View>
+      </ScrollView>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-
+    container:{
+        flex:1,
+        backgroundColor:'#ffffff',
+        alignItems:'center'
+    }
 });
 
 export default Login;
