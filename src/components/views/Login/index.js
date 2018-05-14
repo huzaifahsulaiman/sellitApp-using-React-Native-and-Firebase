@@ -5,46 +5,57 @@ import { getOrientation, setOrientationListener, removeOrientationListener} from
 
 import LoadTabs from '../Tabs';
 import Logo from './logo';
+import LoginPanel from "./loginPanel";
 
 class Login extends React.Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props){
-        super(props)
+    this.state = {
+      orientation: getOrientation(500),
+      logoAnimation:false
+    };
 
-        this.state = {
-            orientation: getOrientation(500)
-        }
+    setOrientationListener(this.changeOrientation);
+  }
 
-        setOrientationListener(this.changeOrientation)
-    }
+  changeOrientation = () => {
+    this.setState({
+      orientation: getOrientation(500)
+    });
+  };
+  
+  showLogin = () => {
+      this.setState({
+          logoAnimation:true
+      })
+  }
 
-    changeOrientation = () => {
-        this.setState({
-            orientation:getOrientation(500)
-        })
-    }
+  componentWillUnmount() {
+    removeOrientationListener();
+  }
 
-    componentWillUnmount(){
-        removeOrientationListener()
-    }
-
-    render() {
-        return (
-            <ScrollView>
-                <View style={styles.container}>
-                    <Logo
-                        orientation={this.state.orientation}
-                    />
-                </View>
-            </ScrollView>
-        );
-    }
+  render() {
+    return (
+      <ScrollView>
+        <View style={styles.container}>
+          <Logo
+            showLogin={this.showLogin}
+            orientation={this.state.orientation}
+          />
+          <LoginPanel 
+            show={this.state.logoAnimation}
+            orientation={this.state.orientation} />
+        </View>
+      </ScrollView>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:'#fff',
+        backgroundColor:'#ffffff',
         alignItems:'center'
     }
 });
