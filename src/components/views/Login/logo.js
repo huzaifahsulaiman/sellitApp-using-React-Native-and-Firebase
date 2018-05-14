@@ -26,30 +26,43 @@ class Logo extends Component {
     }
     
     render(){
-        return <View>
-            <View style={styles.logoStyles}>
-              <Animated.View style={{ opacity: this.state.sellAnim, top: this.state.sellAnim.interpolate(
-                    {
-                      inputRange: [0, 1],
-                      outputRange: [100, 0]
-                    }
-                  ) }}>
-                <Text style={styles.sell}>Sell</Text>
-              </Animated.View>
-              <Animated.View style={{ opacity: this.state.itAnim }}>
-                <Text style={styles.it}>It</Text>
-              </Animated.View>
+
+        return(
+            <View>
+                <View style={
+                    this.props.orientation === "portrait"
+                    ? styles.logoStylesPortrait
+                    : styles.logoStylesLandscape
+                }>
+                    <Animated.View style={{ opacity: this.state.sellAnim, top: this.state.sellAnim.interpolate(
+                            {
+                            inputRange: [0, 1],
+                            outputRange: [100, 0]
+                            }
+                        ) }}>
+                        <Text style={styles.sell}>Sell</Text>
+                    </Animated.View>
+                    <Animated.View style={{ opacity: this.state.itAnim }}>
+                        <Text style={styles.it}>It</Text>
+                    </Animated.View>
+                </View>
             </View>
-          </View>;
+        );
     }
 }
 
 const styles = StyleSheet.create({
-    logoStyles: {
+    logoStylesPortrait: {
         marginTop: 50,
         flex: 1,
         flexDirection: 'row',
         maxHeight: 100
+    },
+    logoStylesLandscape: {
+        marginTop: 20,
+        flex: 1,
+        flexDirection: 'row',
+        maxHeight: 50
     },
     sell:{
         fontSize:40,
