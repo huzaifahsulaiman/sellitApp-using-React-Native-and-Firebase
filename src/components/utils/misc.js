@@ -3,6 +3,10 @@ import {
     Platform
 } from 'react-native';
 
+export const APIKEY = `AIzaSyAXKOeqm1bXjSYxxvlNSjYukrE2MJHubSA`;
+export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`
+export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`
+
 export const getOrientation = (value) => {
     return Dimensions.get("window").height > value ? "portrait" : "landscape"
 }

@@ -35,7 +35,7 @@ export default () => Navigation.startSingleScreenApp({
   screen:{
     screen:"sellitApp.Login",
     title:"Login",
-    navigationStyle:{
+    navigatorStyle:{
       navBarHidden:true
     }
   }
