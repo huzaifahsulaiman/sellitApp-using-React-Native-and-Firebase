@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 
 import Input from '../../utils/forms/inputs';
+import ValidationRules from "../../utils/forms/validationRules";
 
 class LoginForm extends Component {
   state = {
@@ -15,7 +16,8 @@ class LoginForm extends Component {
         valid: false,
         type: "textinput",
         rules: {
-          isEmail: true
+            isRequired:true,
+            isEmail: true
         }
       },
       password: {
@@ -23,7 +25,8 @@ class LoginForm extends Component {
         valid: false,
         type: "textinput",
         rules: {
-          minLength: 6
+            isRequired: true,
+            minLength: 6
         }
       },
       confirmPassword: {
@@ -38,12 +41,19 @@ class LoginForm extends Component {
   };
 
   updateInput = (name, value) => {
-    thos.setState({
+    this.setState({
       hasErrors: false
     });
 
     let formCopy = this.state.form;
     formCopy[name].value = value;
+
+    let rules = formCopy[name].rules;
+    let valid = ValidationRules(value, rules, formCopy);
+    
+    //console.log(valid)
+    //changing validation to true
+    formCopy[name].valid = valid;
 
     this.setState({
       form: formCopy
@@ -56,7 +66,7 @@ class LoginForm extends Component {
             placeholder="Confirm your password"
             type={this.state.form.confirmPassword.type}
             value={this.state.form.confirmPassword.value}
-            onChangeText={value => () => this.updateInput("confirmPassword", value)}
+            onChangeText={value => this.updateInput("confirmPassword", value)}
             secureTextEntry
         />
       :null
@@ -78,7 +88,7 @@ class LoginForm extends Component {
           placeholder="Enter your email"
           type={this.state.form.email.type}
           value={this.state.form.email.value}
-          onChangeText={value => () => this.updateInput("email", value)}
+          onChangeText={value => this.updateInput("email", value)}
           autoCapitalize={"none"}
           keyboardType={"email-address"}
         />
@@ -87,7 +97,7 @@ class LoginForm extends Component {
           placeholder="Enter your password"
           type={this.state.form.password.type}
           value={this.state.form.password.value}
-          onChangeText={value => () => this.updateInput("password", value)}
+          onChangeText={value => this.updateInput("password", value)}
           secureTextEntry
         />
 
