@@ -1,7 +1,4 @@
-#Sun May 13 11:40:24 EDT 2018
-base.0=/Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/build/intermediates/transforms/dexMerger/debug/13
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
+#Mon May 14 21:58:24 EDT 2018
+base.0=/Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/build/intermediates/transforms/dexMerger/debug/15
 renamed.0=classes.dex
-base.1=/Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/build/intermediates/transforms/dexMerger/debug/12
+path.0=classes.dex

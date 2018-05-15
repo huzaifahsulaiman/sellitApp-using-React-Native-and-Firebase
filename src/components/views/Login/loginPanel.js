@@ -55,7 +55,9 @@ class LoginPanel extends Component {
                         })
                     }}
                 >
-                    <LoginForm/>
+                    <LoginForm
+                        platform={this.props.platform}
+                    />
                 </Animated.View>
             </View>
         )
