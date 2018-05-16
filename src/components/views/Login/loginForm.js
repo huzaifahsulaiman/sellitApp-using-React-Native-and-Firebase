@@ -8,6 +8,7 @@ import LoadTabs from '../Tabs';
 import { connect } from 'react-redux';
 import { signUp,signIn } from '../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
+import { setTokens } from "../../utils/misc"
 
 class LoginForm extends Component {
   state = {
@@ -98,11 +99,13 @@ class LoginForm extends Component {
         //console.log(formToSubmit)
         if(this.state.type === "Login"){
           this.props.signIn(formToSubmit).then(() => {
-            console.log(this.props.User)
+            //console.log(this.props.User)
+            this.manageAccess()
           })
         }else{
           this.props.signUp(formToSubmit).then(()=>{
-            console.log(this.props.User)
+            //console.log(this.props.User)
+            this.manageAccess();
           })
         }
       }else{
@@ -121,13 +124,32 @@ class LoginForm extends Component {
       });
   }
 
-    formHasErrors = () => (
-        this.state.hasErrors ?
-            <View style={styles.errorContainer}>
-                <Text style={styles.errorLabel}>Opps, check your info</Text>
-            </View>
-        :null
-    )
+  formHasErrors = () => (
+      this.state.hasErrors ?
+          <View style={styles.errorContainer}>
+              <Text style={styles.errorLabel}>Opps, check your info</Text>
+          </View>
+      :null
+  )
+
+  manageAccess = () => {
+    if(!this.props.User.userData.uid) {
+      this.setState({ hasErrors: true })
+    }else{
+      setTokens(this.props.User.userData, ()=>{
+        //console.log('works')
+        this.setState({ hasErrors: false });
+        LoadTabs();
+      });
+    }
+  }
+
+  //to show the token
+  // componentDidMount(){
+  //   getToken((values)=>{
+  //     console.log(values)
+  //   })
+  // }
 
   render() {
     return (
