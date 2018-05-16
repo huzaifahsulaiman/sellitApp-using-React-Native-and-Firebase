@@ -5,8 +5,9 @@ import {
 } from 'react-native';
 
 export const APIKEY = `AIzaSyAXKOeqm1bXjSYxxvlNSjYukrE2MJHubSA`;
-export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`
-export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`
+export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`;
+export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`;
+export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY}`;
 
 export const getOrientation = (value) => {
     return Dimensions.get("window").height > value ? "portrait" : "landscape"
@@ -28,7 +29,7 @@ export const getPlatform = () => {
     }
 }
 
-export const getToken = (cb) => {
+export const getTokens = (cb) => {
     AsyncStorage.multiGet([
       "@sellitapp@token",
       "@sellitapp@refreshToken",
