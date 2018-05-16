@@ -5,6 +5,7 @@ INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/andro
 INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
+MERGED from [:react-native-vector-icons] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:2:1-15:12
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/4c104d0db947a3b5140b0ed5bacf7865/AndroidManifest.xml:2:1-14:12
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/3701c1ad81901406c1ec42b480eb107b/AndroidManifest.xml:2:1-13:12
@@ -139,6 +140,8 @@ INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/andro
 INJECTED from /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/android/app/src/main/AndroidManifest.xml
 MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-navigation] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/huzaifah_s/Desktop/Programming/React-Native/sellitApp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/060f4c15c6020a33552ff995b5ed8a3b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/huzaifah_s/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/4c104d0db947a3b5140b0ed5bacf7865/AndroidManifest.xml:8:5-10:41
