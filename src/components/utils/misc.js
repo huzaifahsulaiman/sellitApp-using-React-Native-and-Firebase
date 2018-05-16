@@ -38,6 +38,31 @@ export const navigatorDrawer = (event, $this) => {
     }
 }
 
+export const navigatorDeepLink = (event, $this) => {
+    if(event.type === 'DeepLink'){
+        $this.props.navigator.toggleDrawer({
+            side: 'left',
+            animatedL: true
+        });
+
+        if(event.payload.typeLink === 'tab'){
+            $this.props.navigator.switchToTab({
+                tabIndex:event.payload.indexLink
+            })
+        }else{
+            $this.props.navigator.showModal({
+                screen: event.link,
+                animationType: 'slide-horizontal',
+                navigatorStyle:{
+                    navBarBackgroundColor: '#00ADA9',
+                    screenBackgroundColor: '#ffffff'
+                },
+                backButtonHidden:false
+            })
+        }
+    }
+}
+
 export const getTokens = (cb) => {
     AsyncStorage.multiGet([
       "@sellitapp@token",

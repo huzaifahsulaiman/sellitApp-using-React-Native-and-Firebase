@@ -31,7 +31,7 @@ class SidedrawerComponent extends Component {
             {
                 value: "My posts",
                 iconName: "th-list",
-                shouldGoTo: "sellitApp.AddPost",
+                shouldGoTo: "sellitApp.UserPosts",
                 typeLink: "view",
                 index: null,
                 privacy: true
@@ -47,7 +47,15 @@ class SidedrawerComponent extends Component {
             iconStyle={{width:15}}
             color="#ffffff"
             size={18}
-            onPress={()=> alert('clicked')}      
+            onPress={()=> {
+                this.props.navigator.handleDeepLink({
+                    link:button.shouldGoTo,
+                    payload:{
+                        typeLink: button.typeLink,
+                        indexLink: button.index
+                    }
+                })
+            }}      
         >
           <Text style={styles.buttonText}>
             {button.value}
