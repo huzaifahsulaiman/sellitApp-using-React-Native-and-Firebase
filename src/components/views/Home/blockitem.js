@@ -31,7 +31,9 @@ const BlockItem = (props) => {
                 style={{flex:2}}
                 onPress={()=>alert('go to post')}
             >
-                <View>
+                <View
+                    style={[styles.blockGridStyle, styles.blockGridStyleLeft]}
+                >
                     {itemImage()}
                     {itemText(item.blockOne)}
                 </View>
@@ -40,7 +42,9 @@ const BlockItem = (props) => {
                 style={{ flex: 2 }}
                 onPress={() => alert('go to post')}
             >
-                <View>
+                <View
+                    style={[styles.blockGridStyle, styles.blockGridStyleRight]}
+                >
                     {itemImage()}
                     {itemText(item.blockTwo)}
                 </View>
@@ -72,16 +76,24 @@ const styles = StyleSheet.create({
     borderLeftColor: "#FF6444"
   },
   itemTextTitle: {
-    fontFamily: 'Roboto-Black',
-    color: '#4C4C4C',
+    fontFamily: "Roboto-Black",
+    color: "#4C4C4C",
     marginBottom: 5
   },
-    itemTextPrice: {
-        fontFamily: 'Roboto-Regular',
-        color: '#00ada9',
-        marginBottom: 5
-    }
-
+  itemTextPrice: {
+    fontFamily: "Roboto-Regular",
+    color: "#00ada9",
+    marginBottom: 5
+  },
+  blockGridStyle: {
+    backgroundColor: "#f1f1f1"
+  },
+  blockGridStyleLeft: {
+    marginRight:2.5
+  },
+  blockGridStyleRight: {
+    marginRight: 2.5
+  }
 });
 
 export default BlockItem;

@@ -27,11 +27,23 @@ class Home extends Component {
         })
     }
 
-    updateCategoryHandler = (value) => (
+    updateCategoryHandler = (value) => {
         this.setState({
-            categorySelected:value
+            isLoading:true,
+            categorySelected:value,
+            articles:[]
+        });
+        this.props.getArticles(value).then(()=>{
+            const newArticles = gridTwoColumns(this.props.Articles.list);
+
+            //console.log(newArticles)
+
+            this.setState({
+                isLoading: false,
+                articles: newArticles
+            })
         })
-    )
+    }
 
     componentDidMount(){
         this.props.getArticles('All').then(()=>{

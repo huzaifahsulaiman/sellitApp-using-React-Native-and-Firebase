@@ -7,7 +7,7 @@ export function getArticles(category){
     let URL = `${FIREBASEURL}/articles.json`;
     //let URL = 'https://sellitapp-c0388.firebaseio.com/articles.json';
     if(category !== 'All'){
-        URL = '...'
+        URL = `${URL}/?orderBy=\"category\"&equalTo=\"${category}\"`;
     }
 
     const request = axios(URL)
