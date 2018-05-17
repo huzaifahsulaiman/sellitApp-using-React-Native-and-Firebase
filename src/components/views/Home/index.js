@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { connect } from 'react-redux';
 import { getArticles } from '../../Store/actions/articles_action';
 import { bindActionCreators } from 'redux';
+import BlockItem from './blockitem';
 
 
 class Home extends Component {
@@ -46,6 +47,16 @@ class Home extends Component {
         })
     }
 
+    showArticles = () => (
+        this.state.articles.map((item,i)=>(
+            <BlockItem
+                key={`columnHome-${i}`}
+                item={item}
+                iteration={i}
+            />
+        ))
+    )
+
     render() {
         return (
             <ScrollView>
@@ -66,6 +77,11 @@ class Home extends Component {
                             </View>
                         :null
                     }
+                    <View style={styles.articleContainer}>
+                        <View style={{flex:1}}>
+                            {this.showArticles()}
+                        </View>
+                    </View>
                 </View>
                 
             </ScrollView>
@@ -81,6 +97,12 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems:'center',
         marginTop:50
+    },
+    articleContainer:{
+        padding:10,
+        flex:1,
+        flexDirection:'row',
+        justifyContent:'space-between'
     }
 });
 
