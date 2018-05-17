@@ -73,7 +73,7 @@ class Home extends Component {
                 navBarTextFontSize: 20,
                 navBarTextColor: '#ffffff',
                 navBarTextFontFamily:'RobotoCondensed-Bold',
-                navBarBackgroundColor: '#00ADA9',
+                navBarBackgroundColor: '#00ADA9', //for android
                 screenBackgroundColor: '#ffffff'
 
             }
