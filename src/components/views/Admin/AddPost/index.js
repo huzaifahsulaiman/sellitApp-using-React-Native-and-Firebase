@@ -8,35 +8,42 @@ class AddPost extends React.Component {
   constructor(props) {
     super(props);
 
-    this.props.navigator.setOnNavigatorEvent((event) => {
-      navigatorDrawer(event, this) //this mean this class
-    })
+    this.props.navigator.setOnNavigatorEvent(event => {
+      navigatorDrawer(event, this); //this mean this class
+    });
   }
 
   state = {
+    loading:false,
     hasErrors: false,
     form: {
       category: {
         value: "",
-        name:"category",
+        name: "category",
         valid: false,
         type: "picker",
-        options: ['Select a category','Sports', 'Music', 'Clothing', 'Electronics'],
+        options: [
+          "Select a category",
+          "Sports",
+          "Music",
+          "Clothing",
+          "Electronics"
+        ],
         rules: {
           isRequired: true
         }
       },
-      title:{
+      title: {
         value: "",
         name: "title",
         valid: false,
         type: "textinput",
-        rules:{
-          isRequired:true,
-          maxLength:50
+        rules: {
+          isRequired: true,
+          maxLength: 50
         }
       },
-      description:{
+      description: {
         value: "",
         name: "description",
         valid: false,
@@ -45,9 +52,29 @@ class AddPost extends React.Component {
           isRequired: true,
           maxLength: 200
         }
+      },
+      price: {
+        value: "",
+        name: "description",
+        valid: false,
+        type: "textinput",
+        rules:{
+          isRequired:true,
+          maxLength:6
+        }
+      },
+      email: {
+        value: "",
+        name:"email",
+        valid: false,
+        type: "textinput",
+        rules: {
+          isRequired: true,
+          isEmail: true
+        }
       }
     }
-  }
+  };
 
   updateInput = (name, value) => {
     this.setState({
@@ -69,17 +96,34 @@ class AddPost extends React.Component {
     });
   };
 
+  submitFormHandler = () => {
+    let isFormValid = true;
+    let dataToSubmit = {};
+    const formCopy = this.state.form;
+
+    for(let key in formCopy){
+      isFormValid = isFormValid && formCopy[key].valid;
+      dataToSubmit[key]= this.state.form[key].value;
+    }
+
+    if(isFormValid){
+      console.log(dataToSubmit)
+    }else{
+      console.log("has errors");
+    }
+  }
+
   render() {
     return (
       <ScrollView>
         <View style={styles.formInputContainer}>
-          <View style={{flex:1,alignItems:'center'}}>
-             <Text style={styles.mainTitle}>Sell your stuff</Text> 
+          <View style={{ flex: 1, alignItems: "center" }}>
+            <Text style={styles.mainTitle}>Sell your stuff</Text>
           </View>
 
-          <View style={{flexDirection:'row', alignItems:'center'}}>
-            <View style={{ flex:1 }}>
-              <Text>Select a category</Text> 
+          <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <View style={{ flex: 1 }}>
+              <Text>Select a category</Text>
             </View>
             <View style={{ flex: 1 }}>
               <Input
@@ -91,8 +135,10 @@ class AddPost extends React.Component {
               />
             </View>
           </View>
-          <View style={{flex:1,alignItems:'center'}}>
-            <Text style={styles.secondTitle}>Describe what you are selling</Text>
+          <View style={{ flex: 1, alignItems: "center" }}>
+            <Text style={styles.secondTitle}>
+              Describe what you are selling
+            </Text>
           </View>
 
           <View>
@@ -118,6 +164,51 @@ class AddPost extends React.Component {
             />
           </View>
 
+          <View>
+            <Text 
+              style={{
+                marginTop:20,
+                marginBottom:20
+              }}
+            >How much is the item?
+            </Text>
+            <Input
+              placeholder="Enter the price"
+              type={this.state.form.price.type}
+              value={this.state.form.price.value}
+              onChangeText={value => this.updateInput("price", value)}
+              overrideStyle={styles.inputText}
+              keyboardType={"numeric"}
+            />
+          </View>
+          <View style={{ flex: 1, alignItems: "center" }}>
+            <Text style={styles.secondTitle}>
+              Add your contact data
+            </Text>
+          </View>
+          <View>
+            <Text>
+              Please enter the email where buyer can contact
+            </Text>
+            <Input
+              placeholder="Enter your email"
+              type={this.state.form.email.type}
+              value={this.state.form.email.value}
+              onChangeText={value => this.updateInput("email", value)}
+              autoCapitalize={"none"}
+              keyboardType={"email-address"}
+              overrideStyle={styles.inputText}
+            />
+          </View>
+          {
+            !this.state.loading ?
+              <Button
+                title={"Sell it"}
+                color="lightgrey"
+                onPress={this.submitFormHandler}
+              />
+            :null
+          }
         </View>
       </ScrollView>
     );
