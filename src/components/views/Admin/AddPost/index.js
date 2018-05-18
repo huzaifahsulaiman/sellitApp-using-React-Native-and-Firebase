@@ -26,6 +26,26 @@ class AddPost extends React.Component {
           isRequired: true
         }
       },
+      title:{
+        value: "",
+        name: "title",
+        valid: false,
+        type: "textinput",
+        rules:{
+          isRequired:true,
+          maxLength:50
+        }
+      },
+      description:{
+        value: "",
+        name: "description",
+        valid: false,
+        type: "textinput",
+        rules: {
+          isRequired: true,
+          maxLength: 200
+        }
+      }
     }
   }
 
@@ -71,6 +91,33 @@ class AddPost extends React.Component {
               />
             </View>
           </View>
+          <View style={{flex:1,alignItems:'center'}}>
+            <Text style={styles.secondTitle}>Describe what you are selling</Text>
+          </View>
+
+          <View>
+            <Text>Please add the title</Text>
+            <Input
+              placeholder="Enter a title"
+              type={this.state.form.title.type}
+              value={this.state.form.title.value}
+              onChangeText={value => this.updateInput("title", value)}
+              overrideStyle={styles.inputText}
+            />
+          </View>
+
+          <View>
+            <Input
+              placeholder="Enter the description"
+              type={this.state.form.description.type}
+              value={this.state.form.description.value}
+              onChangeText={value => this.updateInput("description", value)}
+              multiline={true}
+              numberOfLines={4}
+              overrideStyle={styles.inputTextMultiline}
+            />
+          </View>
+
         </View>
       </ScrollView>
     );
@@ -87,6 +134,24 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto-Black',
     fontSize: 30,
     color: '#00ADA9'
+  },
+  secondTitle:{
+    fontFamily:'Roboto-Black',
+    fontSize:20,
+    color:'#00ADA9',
+    marginTop:30,
+    marginBottom:30
+  },
+  inputText:{
+    backgroundColor:'#F2F2F2',
+    borderBottomWidth:0,
+    padding:10
+  },
+  inputTextMultiline:{
+    backgroundColor: '#F2F2F2',
+    borderBottomWidth: 0,
+    padding: 10,
+    minHeight:100
   }
 });
 
