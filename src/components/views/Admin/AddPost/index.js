@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, ScrollView, Button } from "react-native";
+import { StyleSheet, Text, View, ScrollView, Button, Modal } from "react-native";
 import { navigatorDrawer } from "../../../utils/misc";
 import Input from "../../../utils/forms/inputs";
 import ValidationRules from "../../../utils/forms/validationRules";
@@ -14,8 +14,11 @@ class AddPost extends React.Component {
   }
 
   state = {
-    loading:false,
+    loading: false,
     hasErrors: false,
+    modalVisible:false,
+    modalSuccess: false,
+    errorsArray: [],
     form: {
       category: {
         value: "",
@@ -31,7 +34,8 @@ class AddPost extends React.Component {
         ],
         rules: {
           isRequired: true
-        }
+        },
+        errorMsg: "Category: Please select one"
       },
       title: {
         value: "",
@@ -41,7 +45,8 @@ class AddPost extends React.Component {
         rules: {
           isRequired: true,
           maxLength: 50
-        }
+        },
+        errorMsg: "Title: Maximum length is 50"
       },
       description: {
         value: "",
@@ -51,27 +56,30 @@ class AddPost extends React.Component {
         rules: {
           isRequired: true,
           maxLength: 200
-        }
+        },
+        errorMsg: "Description: Maximum length is 200"
       },
       price: {
         value: "",
         name: "description",
         valid: false,
         type: "textinput",
-        rules:{
-          isRequired:true,
-          maxLength:6
-        }
+        rules: {
+          isRequired: true,
+          maxLength: 6
+        },
+        errorMsg: "Price: Maximum length is 6"
       },
       email: {
         value: "",
-        name:"email",
+        name: "email",
         valid: false,
         type: "textinput",
         rules: {
           isRequired: true,
           isEmail: true
-        }
+        },
+        errorMsg: "Email: Valid email is required"
       }
     }
   };
@@ -101,16 +109,64 @@ class AddPost extends React.Component {
     let dataToSubmit = {};
     const formCopy = this.state.form;
 
-    for(let key in formCopy){
+    for (let key in formCopy) {
       isFormValid = isFormValid && formCopy[key].valid;
-      dataToSubmit[key]= this.state.form[key].value;
+      dataToSubmit[key] = this.state.form[key].value;
     }
 
-    if(isFormValid){
-      console.log(dataToSubmit)
-    }else{
-      console.log("has errors");
+    if (isFormValid) {
+      console.log(dataToSubmit);
+      this.setState({
+        modalSuccess:true
+      })
+    } else {
+      //console.log("has errors");
+      let errorsArray = [];
+
+      for (let key in formCopy) {
+        if (!formCopy[key].valid) {
+          errorsArray.push(formCopy[key].errorMsg)
+        }
+      }
+      this.setState({
+        loading:false,
+        hasErrors:true,
+        modalVisible:true,
+        errorsArray
+      })
     }
+  };
+
+  showErrorsArray = (errors) => (
+    errors ?
+      errors.map((item,i)=>(
+        <Text key={i} style={styles.errorItem}>
+          - {item}
+        </Text>
+      ))
+    :null
+  )
+
+  clearErrors = () => {
+    this.setState({
+      hasErrors:false,
+      modalVisible:false,
+      errorsArray:[]
+    })
+  }
+
+  resetSellitScreen= () => {
+    const formCopy = this.state.form;
+    for (let key in formCopy){
+      formCopy[key].valid=false;
+      formCopy[key].value="";
+    }
+    this.setState({
+      modalSuccess:false,
+      hasErrors:false,
+      errorsArray:[],
+      loading:false
+    })
   }
 
   render() {
@@ -165,12 +221,13 @@ class AddPost extends React.Component {
           </View>
 
           <View>
-            <Text 
+            <Text
               style={{
-                marginTop:20,
-                marginBottom:20
+                marginTop: 20,
+                marginBottom: 20
               }}
-            >How much is the item?
+            >
+              How much is the item?
             </Text>
             <Input
               placeholder="Enter the price"
@@ -182,14 +239,10 @@ class AddPost extends React.Component {
             />
           </View>
           <View style={{ flex: 1, alignItems: "center" }}>
-            <Text style={styles.secondTitle}>
-              Add your contact data
-            </Text>
+            <Text style={styles.secondTitle}>Add your contact data</Text>
           </View>
           <View>
-            <Text>
-              Please enter the email where buyer can contact
-            </Text>
+            <Text>Please enter the email where buyer can contact</Text>
             <Input
               placeholder="Enter your email"
               type={this.state.form.email.type}
@@ -201,14 +254,45 @@ class AddPost extends React.Component {
             />
           </View>
           {
-            !this.state.loading ?
+            !this.state.loading ? (
               <Button
                 title={"Sell it"}
                 color="lightgrey"
                 onPress={this.submitFormHandler}
               />
-            :null
+            ) : null
           }
+          <Modal
+            animationType="slide"
+            visible={this.state.modalVisible}
+            onRequestClose={()=>{}}
+          >
+            <View style={{padding:20}}>
+              {this.showErrorsArray(this.state.errorsArray)}
+              <Button
+                title="Got it"
+                onPress={this.clearErrors}
+              />
+            </View>
+          </Modal>
+          <Modal
+            animationType="slide"
+            visible={this.state.modalSuccess}
+            onRequestClose={() => { }}
+          >
+            <View style={{ padding: 20 }}>
+              <Text>Your post has been posted</Text>
+              <Button
+                title="Go back home"
+                onPress={()=>{
+                  this.resetSellitScreen();
+                  this.props.navigator.switchToTab({
+                    tabIndex:0
+                  })
+                }}
+              />
+            </View>
+          </Modal>
         </View>
       </ScrollView>
     );
@@ -243,6 +327,12 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
     padding: 10,
     minHeight:100
+  },
+  errorItem:{
+    fontFamily: 'Roboto-Black',
+    fontSize: 16,
+    color: 'red',
+    marginBottom:10
   }
 });
 
