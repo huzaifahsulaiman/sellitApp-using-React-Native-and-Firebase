@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, ScrollView, Button, Modal } from "react-native";
-import { navigatorDrawer } from "../../../utils/misc";
+import { navigatorDrawer, getTokens, setTokens } from "../../../utils/misc";
 import Input from "../../../utils/forms/inputs";
 import ValidationRules from "../../../utils/forms/validationRules";
+import { connect } from 'react-redux';
+import { addArticle } from '../../../Store/actions/articles_action';
+import { autoSignIn } from '../../../Store/actions/user_actions';
+import { bindActionCreators } from 'redux';
 
 class AddPost extends React.Component {
   constructor(props) {
@@ -115,10 +119,29 @@ class AddPost extends React.Component {
     }
 
     if (isFormValid) {
-      console.log(dataToSubmit);
+      //console.log(dataToSubmit);
       this.setState({
-        modalSuccess:true
+        loading:true
+      });
+
+      getTokens((value)=>{
+        //console.log(value)
+        const dateNow = new Date();
+        const expiration = dateNow.getTime();
+        const form = {
+          ...dataToSubmit,
+          uid:value[3][1]
+        }
+
+        if(expiration > value[2][1]){
+            alert('auto sign in')
+        }else{
+          alert('post the article')
+        }
       })
+      // this.setState({
+      //   modalSuccess:true
+      // })
     } else {
       //console.log("has errors");
       let errorsArray = [];
@@ -336,4 +359,15 @@ const styles = StyleSheet.create({
   }
 });
 
-export default AddPost;
+function mapStateToProps(state){
+  return{
+    Articles:state.Articles,
+    User:state.User
+  }
+}
+
+function mapDispatchToProps(dispatch){
+  return bindActionCreators({addArticle, autoSignIn},dispatch)
+} 
+
+export default connect(mapStateToProps,mapDispatchToProps)(AddPost);
