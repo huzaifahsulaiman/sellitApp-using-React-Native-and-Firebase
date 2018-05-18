@@ -139,7 +139,7 @@ class LoginForm extends Component {
       setTokens(this.props.User.userData, ()=>{
         //console.log('works')
         this.setState({ hasErrors: false });
-        LoadTabs();
+        LoadTabs(true);
       });
     }
   }
@@ -205,7 +205,7 @@ class LoginForm extends Component {
           <Button
             title="I'll do it later"
             color="lightgrey"
-            onPress={() => LoadTabs()}
+            onPress={() => LoadTabs(false)}
           />
         </View>
       </View>

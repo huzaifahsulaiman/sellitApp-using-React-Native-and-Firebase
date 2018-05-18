@@ -23,7 +23,7 @@ class Home extends Component {
 
         this.props.navigator.setOnNavigatorEvent((event)=>{
             navigatorDeepLink(event, this)
-            navigatorDrawer(event, this) //this mean this class
+            navigatorDrawer(event, this)
         })
     }
 
@@ -35,9 +35,6 @@ class Home extends Component {
         });
         this.props.getArticles(value).then(()=>{
             const newArticles = gridTwoColumns(this.props.Articles.list);
-
-            //console.log(newArticles)
-
             this.setState({
                 isLoading: false,
                 articles: newArticles
@@ -48,8 +45,6 @@ class Home extends Component {
     componentDidMount(){
         this.props.getArticles('All').then(()=>{
             const newArticles = gridTwoColumns(this.props.Articles.list);
-            
-            //console.log(newArticles)
 
             this.setState({
                 isLoading: false,
@@ -60,11 +55,9 @@ class Home extends Component {
     }
 
     goToArticleHandler = (props) =>{
-        //alert('go to')
         this.props.navigator.push({
             screen: "sellitApp.Article",
             animationType:"slide-horizontal",
-            //to get properties from the block (passing props to Article page)
             passProps:{
                 ArticleData: props
             },
@@ -73,7 +66,7 @@ class Home extends Component {
                 navBarTextFontSize: 20,
                 navBarTextColor: '#ffffff',
                 navBarTextFontFamily:'RobotoCondensed-Bold',
-                navBarBackgroundColor: '#00ADA9', //for android
+                navBarBackgroundColor: '#00ADA9',
                 screenBackgroundColor: '#ffffff'
 
             }

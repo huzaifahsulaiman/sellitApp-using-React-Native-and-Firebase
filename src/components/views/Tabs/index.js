@@ -21,7 +21,7 @@ const navLeftButton = (sources) => {
   }
 }
 
-const LoadTabs = () => {
+const LoadTabs = (allow) => {
     Promise.all([
       Icon.getImageSource('bars',20,'white'),
       Icon.getImageSource('dollar', 20, 'white'),
@@ -40,7 +40,7 @@ const LoadTabs = () => {
             }
           },
           {
-            screen: "sellitApp.AddPost",
+            screen: allow ? "sellitApp.AddPost" : "sellitApp.NotAllow",
             label: "Sell it",
             title: "Sell it",
             icon: sources[1],
@@ -54,21 +54,21 @@ const LoadTabs = () => {
           tabBarButtonColor: "grey",
           tabBarSelectedButtonColor: "#FFC636",
           tabBarTextFontFamily: "RobotoCondensed-Bold",
-          tabBarBackgroundColor: 'white',
+          tabBarBackgroundColor: "white",
           tabBarTranslucent: false
         },
         appStyle: {
           tabBarButtonColor: "grey",
           tabBarSelectedButtonColor: "#FFC636",
           tabBarTextFontFamily: "RobotoCondensed-Bold",
-          tabBarBackgroundColor: 'white',
-          navBarButtonColor:'#ffffff',
+          tabBarBackgroundColor: "white",
+          navBarButtonColor: "#ffffff",
           keepStyleAcrossPush: true
         },
-        drawer:{
-          left:{
+        drawer: {
+          left: {
             screen: "sellitApp.SidedrawerComponent",
-            fixedWidth:500
+            fixedWidth: 500
           }
         }
       });
