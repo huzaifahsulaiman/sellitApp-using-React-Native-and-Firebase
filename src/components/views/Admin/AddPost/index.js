@@ -4,7 +4,7 @@ import { navigatorDrawer, getTokens, setTokens } from "../../../utils/misc";
 import Input from "../../../utils/forms/inputs";
 import ValidationRules from "../../../utils/forms/validationRules";
 import { connect } from 'react-redux';
-import { addArticle } from '../../../Store/actions/articles_action';
+import { addArticle, resetArticle } from '../../../Store/actions/articles_action';
 import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
 
@@ -134,9 +134,19 @@ class AddPost extends React.Component {
         }
 
         if(expiration > value[2][1]){
-            alert('auto sign in')
+            console.log('auto signed in')
+            this.props.autoSignIn(value[1][1]).then(()=>{
+              setTokens(this.props.User.userData,()=>{
+                this.props.addArticle(form,this.props.User.userData.token).then(()=>{
+                  this.setState({modalSuccess:true})
+                })
+              })
+            })
         }else{
-          alert('post the article')
+          console.log('just posted')
+          this.props.addArticle(form,value[0][1]).then(() => {
+            this.setState({ modalSuccess: true })
+          })
         }
       })
       // this.setState({
@@ -190,6 +200,8 @@ class AddPost extends React.Component {
       errorsArray:[],
       loading:false
     })
+
+    this.props.resetArticle()
   }
 
   render() {
@@ -367,7 +379,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({addArticle, autoSignIn},dispatch)
+  return bindActionCreators({addArticle, autoSignIn,resetArticle},dispatch)
 } 
 
 export default connect(mapStateToProps,mapDispatchToProps)(AddPost);

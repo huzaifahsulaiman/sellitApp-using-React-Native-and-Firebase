@@ -1,4 +1,4 @@
-import { GET_ARTICLES, ADD_ARTICLE } from "../types";
+import { GET_ARTICLES, ADD_ARTICLE, RESET_ARTICLE } from "../types";
 import axios from 'axios';
 import { FIREBASEURL } from '../../utils/misc';
 
@@ -41,5 +41,12 @@ export function addArticle(data, token) {
     return {
         type: ADD_ARTICLE,
         payload: request
+    }
+}
+
+export function resetArticle(){
+    return{
+        type: RESET_ARTICLE,
+        payload:""
     }
 }
