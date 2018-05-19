@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Platform, ScrollView, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Platform, ScrollView, TouchableOpacity, Modal } from "react-native";
 import { connect } from 'react-redux';
 import { getUserPosts } from '../../../Store/actions/user_actions'
 import { bindActionCreators } from 'redux';
@@ -22,7 +22,8 @@ class UserPosts extends Component {
         super(props);
 
         this.state = {
-            posts:[]
+            posts:[],
+            modal:false
         }
 
         if(Platform.OS === 'ios'){
@@ -51,6 +52,13 @@ class UserPosts extends Component {
         }
     }
 
+    showConfirm = (ID) => {
+        this.setState({
+            modal:true,
+            toDelete:ID
+        })
+    }
+
     showPosts=(posts)=>(
         posts ?
             posts.map(item=>(
@@ -73,7 +81,7 @@ class UserPosts extends Component {
                     </View>
                     <View style={styles.button}>
                         <TouchableOpacity
-                            onPress={()=>alert('delete')}
+                            onPress={()=> this.showConfirm(item.id)}
                         >
                             <Text
                                 style={{
@@ -86,6 +94,38 @@ class UserPosts extends Component {
                             </Text>
                         </TouchableOpacity>
                     </View>
+
+                    <Modal
+                        animationType="slide"
+                        transparent={false}
+                        visible={this.state.modal}
+                    >
+                        <View style={{padding:50}}>
+                                <Text style={{fontSize:20}}>
+                                        Are you sure you want to delete the post?
+                                </Text>
+                                <View style={{marginTop:50}}>
+                                    <TouchableOpacity
+                                        onPress={()=> alert('yes delete it')}
+                                    >
+                                        <Text style={styles.modalDelete}>Yes, delete it</Text>
+                                    </TouchableOpacity>
+
+                                    <TouchableOpacity
+                                        onPress={() => {
+                                            this.setState({
+                                                modal:false,
+                                                toDelete:''
+                                            })
+                                        }}
+                                    >
+                                        <Text style={styles.modalClose}>No, keep it</Text>
+                                    </TouchableOpacity>
+                                </View>
+
+                        </View>  
+                    </Modal>          
+
                 </View>
             ))
         :null
@@ -132,6 +172,18 @@ const styles = StyleSheet.create({
     },
     button:{
         alignItems:'center'
+    },
+    modalDelete:{
+        marginBottom:20,
+        alignSelf:'center',
+        fontSize:20,
+        color:'#f44336'
+    },
+    modalClose:{
+        marginBottom: 20,
+        alignSelf: 'center',
+        fontSize: 20,
+        color: '#00ada9'
     }
 
 })
