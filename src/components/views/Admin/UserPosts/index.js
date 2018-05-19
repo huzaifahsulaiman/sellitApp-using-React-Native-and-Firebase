@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, Platform, ScrollView, TouchableOpacity, Modal } from "react-native";
 import { connect } from 'react-redux';
-import { getUserPosts } from '../../../Store/actions/user_actions'
+import {
+  getUserPosts,
+  deleteUserpost
+} from "../../../Store/actions/user_actions";
 import { bindActionCreators } from 'redux';
 import { map } from "rsvp";
 
@@ -59,6 +62,18 @@ class UserPosts extends Component {
         })
     }
 
+    deletePost = (ID) => {
+        this.props.deleteUserpost(ID, this.props.User.userData).then(()=>{
+            const UID = this.props.User.userData.uid;
+            this.props.getUserPosts(UID);
+
+            this.setState({
+                modal:false,
+                toDelete:''
+            });
+        })
+    }
+
     showPosts=(posts)=>(
         posts ?
             posts.map(item=>(
@@ -106,7 +121,7 @@ class UserPosts extends Component {
                                 </Text>
                                 <View style={{marginTop:50}}>
                                     <TouchableOpacity
-                                        onPress={()=> alert('yes delete it')}
+                                        onPress={()=> this.deletePost(this.state.toDelete)}
                                     >
                                         <Text style={styles.modalDelete}>Yes, delete it</Text>
                                     </TouchableOpacity>
@@ -195,7 +210,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({getUserPosts},dispatch)
+    return bindActionCreators({ getUserPosts, deleteUserpost},dispatch)
 };
 
 export default connect(mapStateToProps,mapDispatchToProps)(UserPosts);

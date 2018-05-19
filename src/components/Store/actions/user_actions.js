@@ -2,7 +2,8 @@ import {
     REGISTER_USER,
     SIGN_USER,
     AUTO_SIGN_IN,
-    GET_USER_POSTS
+    GET_USER_POSTS,
+    DELETE_USER_POST
 } from '../types';
 
 import axios from 'axios';
@@ -58,7 +59,7 @@ export function signIn(data) {
     }
 }
 
-export function autoSignIn(refToken) {
+export const autoSignIn = (refToken) => {
     const request = axios({
         method: "POST",
         url: REFRESH,
@@ -94,5 +95,24 @@ export function getUserPosts(UID){
     return {
         type: GET_USER_POSTS,
         payload: request
+    }
+}
+
+export const deleteUserpost = (POSTID, USERDATA) => {
+    const promise = new Promise((resolve, reject)=>{
+        const URL = `${FIREBASEURL}/articles/${POSTID}.json`
+
+        const request = axios({
+            method:'DELETE',
+            url:   `${URL}?auth=${USERDATA.token}`
+        }).then(response=>{
+            resolve ({deletePost:true})
+        }).catch(e=>{
+
+        })
+    })
+    return{
+        type:DELETE_USER_POST,
+        payload: promise
     }
 }
