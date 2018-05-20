@@ -25,15 +25,12 @@ const BlockItem = (props) => {
     )
     
     const block = ({item,i}) => (
-        //console.log(item)
         <View style={styles.blockRow}>
             <TouchableOpacity
                 onPress={()=>{
                     props.goto(item.blockOne)
                 }}
                 style={{flex:2}}
-                //onPress={()=>alert('go to post')}
-            >
             >
                 <View
                     style={[styles.blockGridStyle, styles.blockGridStyleLeft]}
@@ -47,7 +44,6 @@ const BlockItem = (props) => {
                     props.goto(item.blockTwo)
                 }}
                 style={{ flex: 2 }}
-                //onPress={() => alert('go to post')}
             >
                 <View
                     style={[styles.blockGridStyle, styles.blockGridStyleRight]}

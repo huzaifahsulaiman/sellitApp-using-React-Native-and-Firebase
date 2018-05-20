@@ -96,12 +96,12 @@ class Home extends Component {
                     {
                         this.state.isLoading ?
                             <View style={styles.isLoading}>
-                                <Icon name="gears" size={30} color="lightgrey"/>
-                                <Text style={{color:'lightgrey'}}>
+                                <Icon name="gears" size={30} color="lightgrey" />
+                                <Text style={{ color: 'lightgrey' }}>
                                     Loading...
                                 </Text>
                             </View>
-                        :null
+                            : null
                     }
                     <View style={styles.articleContainer}>
                         <View style={{flex:1}}>
