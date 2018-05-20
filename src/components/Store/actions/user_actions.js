@@ -7,7 +7,7 @@ import {
 } from '../types';
 
 import axios from 'axios';
-import { SIGNUP,SIGNIN, REFRESH, FIREBASEURL } from '../../utils/misc';
+import { SIGNUP,SIGNIN, REFRESH, FIREBASEURL, setTokens } from '../../utils/misc';
 
 export function signUp(data){
     const request = axios({
@@ -108,7 +108,25 @@ export const deleteUserpost = (POSTID, USERDATA) => {
         }).then(response=>{
             resolve ({deletePost:true})
         }).catch(e=>{
-
+            const signIn = autoSignIn(USERDATA.refToken);
+            signIn.payload.then(response => {
+                let newTokens = {
+                    token: response.id_token,
+                    refToken: response.refresh_token,
+                    uid: response.user_id
+                }
+                setTokens(newTokens, ()=>{
+                    axios({
+                        method: 'DELETE',
+                        url: `${URL}?auth=${USERDATA.token}`
+                    }).then(()=>{
+                        resolve({
+                            userData:newTokens,
+                            deletePost:true
+                        })
+                    })
+                })
+            })
         })
     })
     return{
